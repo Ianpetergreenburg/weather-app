@@ -1,15 +1,14 @@
 var React = require('react')
 var styles = require('../styles')
 
-var Search = React.createClass({
-  render: function(){
-    return(
-        <div style={this.props.style}>
-          <input type='text' className='form-control' placeholder='Seattle, WA'></input>
-          <button type='submit' className='btn btn-success' style={{margin: 10 + 'px'}}>Get Weather</button>
-        </div>
-      )
-  }
-})
+
+function Search (props) {
+  return (
+      <form onSubmit={props.onSearch} style={props.style}>
+        <input onChange={props.updateSearch} type='text' className='form-control' placeholder='Seattle, WA'></input>
+        <button type='submit' className='btn btn-success' style={{margin: 10 + 'px'}}>Get Weather</button>
+      </form>
+    )
+}
 
 module.exports = Search
