@@ -1,18 +1,16 @@
 var React = require('react')
 var Header = require('./header')
 var styles = require('../styles')
+var Search = require('./search')
 
 var Home = React.createClass({
   render: function(){
     return(
-        <div>
+        <div className='col-sm-12 text-center' style={styles.homecontainer}>
           <Header />
           <div style={styles.home}>
-            <h2>Enter A City Or State</h2>
-            <form>
-              <input type='text' placeholder='Seattle, WA'></input>
-              <button type='submit'>Enter</button>
-            </form>
+            <h1 style={styles.enterCity}>Enter a City and State</h1>
+            <Search style={styles.search}/>
           </div>
         </div>
       )
