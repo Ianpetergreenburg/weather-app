@@ -1,5 +1,6 @@
 var React = require('react')
 var Search = require('../components/search')
+var weatherHelpers = require('../utils/weatherHelpers')
 
 var SearchContainer = React.createClass({
   contextTypes: {
@@ -12,9 +13,18 @@ var SearchContainer = React.createClass({
   },
   handleSearch: function(e){
     e.preventDefault();
+    weatherHelpers.getCurrentWeather(this.state.search)
+    .then(function(weather){
+      console.log('weather', weather)
+    })
+    // this.context.router.push({
+    //   pathname: '/forecast',
+    //   query: {
+    //     city: this.state.search,
+    //   }
+    // })
   },
   handleUpdateSearch: function (e) {
-    console.log('search', e.target.value)
     this.setState({
       search: e.target.value
     });
