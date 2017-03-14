@@ -7,7 +7,7 @@ var Home = React.createClass({
     return(
         <div>
           <Header />
-          <div className='col-sm-12 col-sm-offset-2' style={styles.home}>
+          <div style={styles.home}>
             <h2>Enter A City Or State</h2>
             <form>
               <input type='text' placeholder='Seattle, WA'></input>
