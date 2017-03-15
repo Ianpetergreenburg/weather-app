@@ -51,6 +51,38 @@ var styles = {
     fontFamily: 'Helvetica Neue',
     fontWeight: 100,
     fontSize: '45px'
+  },
+  forecastContainer: {
+    textAlign: 'center'
+  },
+  forecastHeader: {
+    fontSize:'65px',
+    color:'#333',
+    fontWeight:'100',
+    textAlign:'center',
+    marginTop:'50px',
+    marginBottom:'30px'
+  },
+  forecastPrompt: {
+    fontSize:'30px',
+    color:'#333',
+    fontWeight:'100'
+  },
+  forecastDays: {
+    display:'flex',
+    justifyContent:'space-between',
+    alignItems:'center',
+    flexDirection:'row',
+    flexWrap:'wrap',
+    maxWidth:'1200px',
+    margin:'50px auto'
+  },
+  dayContainer: {
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    flexDirection:'column',
+    margin:'35px'
   }
 }
 

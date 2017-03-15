@@ -9,21 +9,21 @@ function getCurrentWeather (city) {
 }
 
 function getForecast (city) {
-  return axios.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&type=accurate&APPID=' + param + '&cnt=5')
+  return axios.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&type=accurate=' + param + '&cnt=5')
 }
 
 var helpers = {
   getCurrentWeather: function (city) {
     return getCurrentWeather(city)
     .then(function(weather){
-      return weather
+      return weather.data
     })
     .catch(function (err) {console.warn('Error in getCurrentWeather: ', err)})
   },
   getForecast: function(city){
   return getForecast(city)
     .then(function(weather){
-      return weather
+      return weather.data
     })
     .catch(function (err) {console.warn('Error in getCurrentWeather: ', err)})
   }
