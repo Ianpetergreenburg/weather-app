@@ -1,17 +1,14 @@
 var React = require('react')
 var styles = require('../styles')
 
-function puke(object) {
-  return <pre>{JSON.stringify(object, null, ' ')}</pre>;
-}
-
-var Day = React.createClass({
-  render: function(){
-    return(
-          <div style={styles.dayContainer}>
-            {puke(this.props.cityInfo)}
-          </div>)
-  }
-})
+function Day (props) {
+  return(
+        <div onClick={props.getDetails} style={styles.dayContainer}>
+          <img src={props.imageSrc} style={styles.weatherIcon}/>
+          <h2 style={styles.dayHeader}> {props.date} </h2>
+        </div>
+        )
+ }
 
 module.exports = Day
+

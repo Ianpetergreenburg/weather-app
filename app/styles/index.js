@@ -83,6 +83,21 @@ var styles = {
     justifyContent:'center',
     flexDirection:'column',
     margin:'35px'
+  },
+  weatherIcon:{
+    height: '130px'
+  },
+  dayHeader: {
+    fontSize:'30px',
+    color:'#333',
+    fontWeight:'100'
+  },
+  details: {
+    fontSize:'34px',
+    fontWeight:'100',
+    maxWidth:'400px',
+    margin:'0 auto',
+    textAlign:'center'
   }
 }
 
