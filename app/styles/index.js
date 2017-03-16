@@ -98,6 +98,10 @@ var styles = {
     maxWidth:'400px',
     margin:'0 auto',
     textAlign:'center'
+  },
+  noLink: {
+    color: 'white',
+   textDecoration: 'none'
   }
 }
 

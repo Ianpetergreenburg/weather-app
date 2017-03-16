@@ -9,14 +9,20 @@ var ForecastContainer = React.createClass({
       cityInfo: []
     })
   },
-  componentDidMount: function(){
-    weatherHelpers.getForecast(this.props.routeParams.city)
+  getWeather: function(city){
+    weatherHelpers.getForecast(city)
     .then(function(weather){
       this.setState({
         isLoading: false,
         cityInfo: weather.list
       })
     }.bind(this))
+  },
+  componentDidMount: function(){
+    this.getWeather(this.props.routeParams.city)
+  },
+  componentWillReceiveProps: function (nextProps) {
+    this.getWeather(this.props.routeParams.city)
   },
   render: function(){
     return (<Forecast
