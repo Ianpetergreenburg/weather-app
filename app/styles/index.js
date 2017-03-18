@@ -1,11 +1,11 @@
-var background = require('../images/pattern.svg')
+var background = require('../images/blue-pattern.svg')
 
 var styles = {
   header: {
     display:'flex',
     justifyContent:'space-between',
     alignItems:'center',
-    background:'#fc6c43',
+    background:'#4083BD',
     color:'#fff',
     padding:'5px',
     margin: '0px',

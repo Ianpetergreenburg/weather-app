@@ -6,7 +6,7 @@ function Search (props) {
   return (
       <form onSubmit={props.onSearch} style={props.style}>
         <input onChange={props.updateSearch} type='text' className='form-control' placeholder='Seattle, WA'></input>
-        <button type='submit' className='btn btn-success' style={{margin: 10 + 'px'}}>Get Weather</button>
+        <button type='submit' className='btn btn-info' style={{margin: 10 + 'px'}}>Get Weather</button>
       </form>
     )
 }
