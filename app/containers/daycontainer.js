@@ -1,7 +1,7 @@
 var React = require('react')
 var styles = require('../styles')
 var dateHelpers = require('../utils/dateHelpers')
-var Day = require('../components/Day')
+var Day = require('../components/day.js')
 
 var DayContainer = React.createClass({
   contextTypes: {

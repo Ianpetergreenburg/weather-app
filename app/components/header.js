@@ -1,6 +1,6 @@
 var React = require('react')
 var styles = require('../styles')
-var SearchContainer = require('../containers/searchcontainer')
+var SearchContainer = require('../containers/searchcontainer.js')
 var Link = require('react-router').Link
 
 var Header = React.createClass({

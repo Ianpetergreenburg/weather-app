@@ -1,5 +1,5 @@
 var React = require('react')
-var DayContainer = require('../containers/daycontainer')
+var DayContainer = require('../containers/daycontainer.js')
 var styles = require('../styles')
 
 function Forecast (props) {

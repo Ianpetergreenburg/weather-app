@@ -1,5 +1,5 @@
 var React = require('react')
-var Day = require('./day')
+var Day = require('./day.js')
 var styles = require('../styles')
 var convertTemp = require('../utils/dateHelpers').convertTemp
 

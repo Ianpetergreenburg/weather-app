@@ -1,6 +1,6 @@
 var React = require('react')
 var weatherHelpers = require('../utils/weatherHelpers')
-var Forecast = require('../components/Forecast')
+var Forecast = require('../components/Forecast.js')
 
 var ForecastContainer = React.createClass({
   getInitialState: function() {
