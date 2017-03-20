@@ -13,6 +13,10 @@ module.exports = {
     filename: "index_bundle.js",
     path: __dirname + '/dist'
   },
+  devServer: {
+    inline: true,
+    port: process.env.PORT || 5000
+  },
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
