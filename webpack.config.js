@@ -15,7 +15,7 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    port: process.env.PORT || 5000
+    port: process.env.PORT
   },
   module: {
     loaders: [
