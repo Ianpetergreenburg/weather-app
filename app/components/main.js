@@ -1,5 +1,5 @@
 var React = require('react')
-var Header = require('./header')
+var Header = require('./header.js')
 var styles=require('../styles')
 
 var Main = React.createClass({

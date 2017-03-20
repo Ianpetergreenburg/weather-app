@@ -1,6 +1,6 @@
 var React = require('react')
 var styles = require('../styles')
-var SearchContainer = require('../containers/SearchContainer')
+var SearchContainer = require('../containers/searchcontainer.js')
 
 var Home = React.createClass({
   render: function(){
