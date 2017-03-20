@@ -5,7 +5,7 @@ var SearchContainer = React.createClass({
   contextTypes: {
     router: React.PropTypes.object.isRequired
   },
-  getInitialState() {
+  getInitialState: function() {
     return({
       search: ''
     })

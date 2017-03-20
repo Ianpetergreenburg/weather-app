@@ -3,7 +3,7 @@ var weatherHelpers = require('../utils/weatherHelpers')
 var Forecast = require('../components/Forecast')
 
 var ForecastContainer = React.createClass({
-  getInitialState() {
+  getInitialState: function() {
     return({
       isLoading: true,
       cityInfo: []
