@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack -p"
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -19,14 +19,14 @@
     "html-webpack-plugin": "^2.28.0",
     "image-webpack-loader": "^3.2.0",
     "style-loader": "^0.13.2",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^2.4.1",
+    "webpack": "^2.2.1"
   },
   "dependencies": {
     "axios": "^0.15.3",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.2",
-    "webpack": "^2.2.1"
+    "react-router": "^3.0.2"
   }
 }
