@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "production": "webpack -p",
+    "prod": "NODE_ENV=production node server.js",
     "start": "webpack-dev-server",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "postinstall": "webpack -p"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "express": "^4.15.2",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
