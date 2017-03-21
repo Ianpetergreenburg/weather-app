@@ -17,7 +17,7 @@ var ForecastContainer = React.createClass({
         cityInfo: weather.list
       })
     }.bind(this))
-    .catch(function(err){console.warn('something went wrong', err)})
+    .catch(function(err){console.warn('something went wrong with getForecast', err)})
   },
   componentDidMount: function(){
     this.getWeather(this.props.routeParams.city)
