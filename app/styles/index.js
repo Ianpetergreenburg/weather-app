@@ -5,7 +5,7 @@ var styles = {
     display:'flex',
     justifyContent:'space-between',
     alignItems:'center',
-    background:'#fff',
+    background:'#4083BD',
     color:'#fff',
     padding:'5px',
     margin: '0px',
