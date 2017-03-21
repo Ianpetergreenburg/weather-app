@@ -5,11 +5,11 @@ var prefix = '&APPID='
 var param = prefix + id
 
 function getCurrentWeather (city) {
-  return axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&type=accurate' + param);
+  return axios.get('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&type=accurate' + param);
 }
 
 function getForecast (city) {
-  return axios.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&type=accurate=' + param + '&cnt=5')
+  return axios.get('https://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&type=accurate=' + param + '&cnt=5')
 }
 
 var helpers = {
