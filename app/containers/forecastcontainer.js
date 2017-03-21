@@ -1,6 +1,6 @@
 var React = require('react')
 var weatherHelpers = require('../utils/weatherHelpers')
-var Forecast = require('../components/Forecast')
+var Forecast = require('../components/forecast.js')
 
 var ForecastContainer = React.createClass({
   getInitialState: function() {
@@ -17,6 +17,7 @@ var ForecastContainer = React.createClass({
         cityInfo: weather.list
       })
     }.bind(this))
+    .catch(function(err){console.warn('something went wrong with getForecast', err)})
   },
   componentDidMount: function(){
     this.getWeather(this.props.routeParams.city)

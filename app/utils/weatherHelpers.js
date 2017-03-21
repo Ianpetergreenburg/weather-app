@@ -25,7 +25,7 @@ var helpers = {
     .then(function(weather){
       return weather.data
     })
-    .catch(function (err) {console.warn('Error in getCurrentWeather: ', err)})
+    .catch(function (err) {console.warn('Error in getForecast: ', err)})
   }
 };
 
