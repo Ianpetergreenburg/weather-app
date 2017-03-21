@@ -2,6 +2,8 @@ var React = require('react')
 var styles = require('../styles')
 var dateHelpers = require('../utils/dateHelpers')
 var Day = require('../components/day.js')
+var weatherIcons = require('../images/weather-icons.js')
+
 
 var DayContainer = React.createClass({
   contextTypes: {
@@ -9,7 +11,7 @@ var DayContainer = React.createClass({
   },
   handleGetDetails: function(e){
     e.preventDefault();
-    var imageSrc = './app/images/weather-icons/' + this.props.cityInfo.weather[0].icon + '.svg'
+    var imageSrc = weatherIcons[this.props.cityInfo.weather[0].icon]
     var date = dateHelpers.getDate(this.props.cityInfo.dt)
     var city = this.props.city
     this.context.router.push({
@@ -23,7 +25,7 @@ var DayContainer = React.createClass({
     })
   },
   render: function(){
-    var imageSrc = './app/images/weather-icons/' + this.props.cityInfo.weather[0].icon + '.svg'
+    var imageSrc = weatherIcons[this.props.cityInfo.weather[0].icon]
     var date = dateHelpers.getDate(this.props.cityInfo.dt)
     return(
           <Day
