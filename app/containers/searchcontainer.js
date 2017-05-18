@@ -1,11 +1,11 @@
 var React = require('react')
-var Search = require('../components/search')
+var Search = require('../components/search.js')
 
 var SearchContainer = React.createClass({
   contextTypes: {
     router: React.PropTypes.object.isRequired
   },
-  getInitialState() {
+  getInitialState: function() {
     return({
       search: ''
     })
