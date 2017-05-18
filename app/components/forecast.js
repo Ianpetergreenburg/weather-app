@@ -4,7 +4,7 @@ var styles = require('../styles')
 
 function Forecast (props) {
   return (props.isLoading === true
-    ? <div> Loading </div>
+    ? <div> Please change your URL to HTTP from HTTPS to get a forecast </div>
     : <div style={styles.forecastContainer}>
         <h1 style={styles.forecastHeader}>{props.city}</h1>
         <p style={styles.forecastPrompt}> Select a Day </p>
