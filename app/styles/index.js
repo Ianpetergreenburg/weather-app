@@ -32,6 +32,7 @@ var styles = {
   },
   search: {
     display:'flex',
+    margin: '0 auto',
     flexDirection: 'column',
     justifyContent:'center',
     alignItems:'center',
